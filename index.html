@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blank Application</title>
+</head>
+<body>
+    <div id="allContent">
+        <div id="content">
+            <h1 class="heading">Cognitive Analysis Test</h1>
+            <p class="instructions">Please click the button below to start your cognative test.</p>
+            <button class="button" id="startTestButton">Start Test</button>
+        </div>
+        <div id="questionnaire" style="display: none;">
+            <h2 class="heading">Questionnaire:</h2>
+            <div id="questionnaire_qs">
+                <p class="instructions">Please answer the following questions before starting the test.</p>
+                <form action="/actionName">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname">
+                </form>
+                <br><br>
+                <form action="/actionBirth">
+                    <label for="birthdate">Age:</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </form>
+                <br><br>
+                <form action="/actionGender">
+                    <label for="gender">Gender:</label>
+                    <select name="gender" id="gender">
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                        <option value="Nonbinary">Nonbinary</option>
+                        <option value="Rather">Rather Not Say</option>
+                    </select>
+                </form>
+                <br><br>
+                <form action="/actionMarital">
+                    <label for="maritalStatus">Marital Status:</label>
+                    <select name="maritalStatus" id="maritalStatus">
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                        <option value="widowed">Widowed</option>
+                        <option value="other">Other</option>
+                    </select>
+                </form>
+                <br><br>
+            </div>
+            <br>
+            <br>
+            <div class="nextqbutton">
+                <button class="button" id="startq1">Next</button>
+            </div>
+        </div>
+        <div class="question-container" id="questionPage1" style="display: none;">
+            <h1 class="heading">Memory Test</h2>
+            <p class="instructions">Take a look at the following pairs of word take some time to memorize these pairs. </p>
+            <hr>
+
+            <div id="pairwords1" style="display: none;text-align: center;font-size: large;">
+                <p>lake plug</p>
+                <p>dust flight</p>
+                <p>house table </p>
+                <p>dog leaf</p>
+                <p>mat drink</p>
+                <p>book coffee</p>
+                <p>soup straw</p>
+                <p>jeep pen</p>
+                <p>bottle clip</p>
+                <p>water tree</p>
+            </div>
+            <div id="pairwords2" style="display: none; text-align: center;font-size: large;">
+                <p>glass napkin</p>
+                <p>phone flight</p>
+                <p>chair bag </p>
+                <p>card spoon</p>
+                <p>bird ring</p>
+                <p>school clip</p>
+                <p>shoe pen</p>
+                <p>sudan coat</p>
+                <p>desk cracker</p>
+                <p>lemon tree</p>
+            </div>
+            <br>
+            <div class="nextqbutton">
+                <button id="nextq" style="display: none;">Next</button>
+            </div>
+        </div>
+
+    </div>
+        <div id="question2start" style="width:420px; display: none;">
+            <h1 class="heading">Memory Test 2</h1>
+            <br>
+            <p class="instructions">Study the images below.</p>
+            <br>
+            <div>
+                <img id="question2image1" src="./assets/question2pic1.png" alt="image1" style="max-width: 100%; max-height: 100px; ">
+                <img id="question2image2" src="./assets/question2pic2.png" alt="image2" style="max-width: 100%; max-height: 100px;">
+                <img id="question2image3" src="./assets/question2pic3.png" alt="image3" style="max-width: 100%; max-height: 100px;">
+                <img id="question2image4" src="./assets/question2pic4.png" alt="image4" style="max-width: 100%; max-height: 100px;">
+                <img id="question2image5" src="./assets/question2pic5.png" alt="image5" style="max-width: 100%; max-height: 100px;">
+                <img id="question2image6" src="./assets/question2pic6.png" alt="image6" style="max-width: 100%; max-height: 100px;">
+                <img id="question2image7" src="./assets/question2pic7.png" alt="image7" style="max-width: 100%; max-height: 100px;">
+                <img id="question2image8" src="./assets/question2pic8.png" alt="image8" style="max-width: 100%; max-height: 100px;"> 
+            </div>
+            <div style="height: 40px;"></div>
+            <button class="nextButton" id="nextq2">Next</button>
+        </div>
+        <div id="options-container">
+            <div id="display_options"></div>
+        </div>
+
+        <div id="question3" style="display: none;">
+        </div>
+
+        <div id="question4">
+            <p class="scoreTxt" id="scoreTxt" style="display: none;">Your Score is:</p>
+        </div>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="app.js"></script>
+</body>
+</html>
